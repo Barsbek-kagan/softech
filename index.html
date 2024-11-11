@@ -6,9 +6,101 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="container">
+    
+    <div class="container-1">
+        <nav id="top-links" class="nav toggle-wrap">
+            <a class="toggle material-design-user157" href="#"></a>
+            <ul class="toggle_cont">
+                <li class="toggle-wrap">
+                    <a href="https://softech.kg/index.php?route=account/account" title="Личный кабинет" class="toggle">
+                        <span>Личный кабинет</span>
+                        <span class="caret"></span></a>
+                    <ul class="toggle_cont toggle_cont__right">
+                                                    <li class="logout-block">
+                            <form action="https://softech.kg/index.php?route=account/login" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input type="text" name="email" value="" placeholder="E-mail" id="input-email" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" name="password" value="" placeholder="Пароль" id="input-password" class="form-control">
+                                </div>
+                                <input type="submit" value="Войти" class="btn btn-primary">
+                                                                </form>
+                        </li>
+                        <li class="logout-block"><a href="https://softech.kg/index.php?route=account/simpleregister" class="btn btn-primary">Регистрация</a> </li>
+                                                </ul>
+                </li>
+            </ul>
+        </nav>
+
+                    <div class="box-currency">
+<form action="https://softech.kg/index.php?route=common/currency/currency" method="post" enctype="multipart/form-data" id="currency">
+<div class="btn-group toggle-wrap">
+<span class="toggle">
+                Валюта: <u>с</u>
+        <span class="hidden-xs hidden-sm hidden-md hidden">Валюта</span> </span>
+<ul class="toggle_cont pull-right">
+              <li><button class="currency-select" type="button" name="RUB"> ₽ Рубль</button></li>
+                    <li><button class="currency-select" type="button" name="KGZ"> <u>с</u> Сом</button></li>
+
+            </ul>
+</div>
+<input type="hidden" name="code" value="">
+<input type="hidden" name="redirect" value="https://softech.kg/11-11-masshtabnye-skidki">
+</form>
+</div>
+
+        <div id="search" class="search">
+<input type="text" name="search" value="" placeholder="">
+<button type="button" class="button-search"><i class="material-design-search100"></i></button>
+</div>
+        <div id="logo" class="logo">
+                            <a href="https://softech.kg/"> <img src="https://softech.kg/image/catalog/System/Logo/sdfsdfsdfsdfsdfsdf.png" title="Магазин SOFTECH.KG" alt="Магазин SOFTECH.KG" class="img-responsive"> </a>
+                        </div>
+
+        <!-- <div id="stuck" class="stuck-menu"> -->
+        <div class="header-bottom">
+
+            <ul class="list-unstyled top-menu col-sm-offset-3">
+                <li class="home-button"><a href="https://softech.kg/">Главная</a></li>
+                <li class="contact-button"><a href="https://softech.kg/index.php?route=information/contact">Контакты</a></li>
+                                    <li class="lmnop"><a href="https://lmnop.kg/" target="_blank">LMNOP.KG</a></li>
+                <li class="stores"><a href="https://stores.kg/" target="_blank">STORES.KG</a></li>
+            </ul>
+
+            <div class="box-cart">
+<div id="cart" class="cart toggle-wrap">
+<button type="button" data-loading-text="Загрузка..." class="toggle">
+    <i class="material-design-shopping232"></i> 
+    <strong>Корзина: </strong>
+    <span id="cart-total" class="cart-total">Товаров 0 (0сом)</span>
+    <span id="cart-total2" class="cart-total2">0</span>		<i class="material-design-drop25"></i>
+</button>
+<ul class="pull-right toggle_cont">
+    <li>
+  <p class="text-center">Ваша корзина пуста!</p>
+</li>
+  </ul>
+</div>
+</div>
+
+        </div>
+
+    </div>
+
+    <style>
+        .container-1 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    </style>
 
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -121,8 +213,12 @@
             </div>
         </div>
     </div>
-   
-    
+
+    <div class="ww">
+         <input type="place holder">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
